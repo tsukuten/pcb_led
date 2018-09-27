@@ -101,8 +101,6 @@ F 3 "" H 4100 6000 50  0001 C CNN
 	1    4100 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 4800 2650 4800
 $Comp
 L Device:R_POT RV55
 U 1 1 5BBD9E8A
@@ -1663,7 +1661,7 @@ P 4500 7900
 AR Path="/5BB44802" Ref="M?"  Part="1" 
 AR Path="/5BD67E15/5BB44802" Ref="M1"  Part="1" 
 F 0 "M1" H 4600 8000 50  0000 L CNN
-F 1 "Fan_LED_1" H 4600 7650 50  0000 L CNN
+F 1 "Fan" H 4600 7650 50  0000 L CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 4500 7810 50  0001 C CNN
 F 3 "" H 4500 7810 50  0001 C CNN
 	1    4500 7900
@@ -1671,207 +1669,31 @@ F 3 "" H 4500 7810 50  0001 C CNN
 $EndComp
 NoConn ~ 4200 7900
 $Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB4480A
-P 5100 7900
-AR Path="/5BB4480A" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB4480A" Ref="M2"  Part="1" 
-F 0 "M2" H 5200 8000 50  0000 L CNN
-F 1 "Fan_LED_2" H 5200 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 5100 7810 50  0001 C CNN
-F 3 "" H 5100 7810 50  0001 C CNN
-	1    5100 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB44811
-P 5700 7900
-AR Path="/5BB44811" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB44811" Ref="M3"  Part="1" 
-F 0 "M3" H 5800 8000 50  0000 L CNN
-F 1 "Fan_LED_3" H 5800 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 5700 7810 50  0001 C CNN
-F 3 "" H 5700 7810 50  0001 C CNN
-	1    5700 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB44818
-P 6300 7900
-AR Path="/5BB44818" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB44818" Ref="M4"  Part="1" 
-F 0 "M4" H 6400 8000 50  0000 L CNN
-F 1 "Fan_LED_4" H 6400 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 6300 7810 50  0001 C CNN
-F 3 "" H 6300 7810 50  0001 C CNN
-	1    6300 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB4481F
-P 6900 7900
-AR Path="/5BB4481F" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB4481F" Ref="M5"  Part="1" 
-F 0 "M5" H 7000 8000 50  0000 L CNN
-F 1 "Fan_LED_5" H 7000 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 6900 7810 50  0001 C CNN
-F 3 "" H 6900 7810 50  0001 C CNN
-	1    6900 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB44826
-P 7500 7900
-AR Path="/5BB44826" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB44826" Ref="M6"  Part="1" 
-F 0 "M6" H 7600 8000 50  0000 L CNN
-F 1 "Fan_LED_6" H 7600 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 7500 7810 50  0001 C CNN
-F 3 "" H 7500 7810 50  0001 C CNN
-	1    7500 7900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR?
 U 1 1 5BB4482D
-P 4500 7300
+P 4500 7500
 AR Path="/5BB4482D" Ref="#PWR?"  Part="1" 
 AR Path="/5BD67E15/5BB4482D" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 4500 7150 50  0001 C CNN
-F 1 "+12V" H 4515 7473 50  0000 C CNN
-F 2 "" H 4500 7300 50  0001 C CNN
-F 3 "" H 4500 7300 50  0001 C CNN
-	1    4500 7300
+F 0 "#PWR0110" H 4500 7350 50  0001 C CNN
+F 1 "+12V" H 4515 7673 50  0000 C CNN
+F 2 "" H 4500 7500 50  0001 C CNN
+F 3 "" H 4500 7500 50  0001 C CNN
+	1    4500 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5BB44833
-P 4500 8600
+P 4500 8400
 AR Path="/5BD67E15/5BB44833" Ref="#PWR0111"  Part="1" 
 AR Path="/5BB44833" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0111" H 4500 8350 50  0001 C CNN
-F 1 "GND" H 4505 8427 50  0000 C CNN
-F 2 "" H 4500 8600 50  0001 C CNN
-F 3 "" H 4500 8600 50  0001 C CNN
-	1    4500 8600
+F 0 "#PWR0111" H 4500 8150 50  0001 C CNN
+F 1 "GND" H 4505 8227 50  0000 C CNN
+F 2 "" H 4500 8400 50  0001 C CNN
+F 3 "" H 4500 8400 50  0001 C CNN
+	1    4500 8400
 	1    0    0    -1  
 $EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB44839
-P 8100 7900
-AR Path="/5BB44839" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB44839" Ref="M7"  Part="1" 
-F 0 "M7" H 8200 8000 50  0000 L CNN
-F 1 "Fan_FET_1" H 8200 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 8100 7810 50  0001 C CNN
-F 3 "" H 8100 7810 50  0001 C CNN
-	1    8100 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L fan_3pin_PC:Fan_3pin_PC M?
-U 1 1 5BB44840
-P 8700 7900
-AR Path="/5BB44840" Ref="M?"  Part="1" 
-AR Path="/5BD67E15/5BB44840" Ref="M8"  Part="1" 
-F 0 "M8" H 8800 8000 50  0000 L CNN
-F 1 "Fan_FET_2" H 8800 7650 50  0000 L CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 8700 7810 50  0001 C CNN
-F 3 "" H 8700 7810 50  0001 C CNN
-	1    8700 7900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 7300 4500 7500
-Wire Wire Line
-	4500 8200 4500 8400
-NoConn ~ 4800 7900
-NoConn ~ 5400 7900
-NoConn ~ 6000 7900
-NoConn ~ 6600 7900
-NoConn ~ 7200 7900
-NoConn ~ 7800 7900
-NoConn ~ 8400 7900
-Wire Wire Line
-	5100 8200 5100 8400
-Wire Wire Line
-	5100 8400 4500 8400
-Connection ~ 4500 8400
-Wire Wire Line
-	4500 8400 4500 8600
-Wire Wire Line
-	5700 8200 5700 8400
-Wire Wire Line
-	5700 8400 5100 8400
-Connection ~ 5100 8400
-Wire Wire Line
-	6300 8200 6300 8400
-Wire Wire Line
-	6300 8400 5700 8400
-Connection ~ 5700 8400
-Wire Wire Line
-	6900 8200 6900 8400
-Wire Wire Line
-	6900 8400 6300 8400
-Connection ~ 6300 8400
-Wire Wire Line
-	7500 8200 7500 8400
-Wire Wire Line
-	7500 8400 6900 8400
-Connection ~ 6900 8400
-Wire Wire Line
-	8100 8200 8100 8400
-Wire Wire Line
-	8100 8400 7500 8400
-Connection ~ 7500 8400
-Wire Wire Line
-	8700 8200 8700 8400
-Wire Wire Line
-	8700 8400 8100 8400
-Connection ~ 8100 8400
-Wire Wire Line
-	5100 7700 5100 7500
-Wire Wire Line
-	5100 7500 4500 7500
-Connection ~ 4500 7500
-Wire Wire Line
-	4500 7500 4500 7700
-Wire Wire Line
-	5100 7500 5700 7500
-Wire Wire Line
-	5700 7500 5700 7700
-Connection ~ 5100 7500
-Wire Wire Line
-	5700 7500 6300 7500
-Wire Wire Line
-	6300 7500 6300 7700
-Connection ~ 5700 7500
-Wire Wire Line
-	6300 7500 6900 7500
-Wire Wire Line
-	6900 7500 6900 7700
-Connection ~ 6300 7500
-Wire Wire Line
-	6900 7500 7500 7500
-Wire Wire Line
-	7500 7500 7500 7700
-Connection ~ 6900 7500
-Wire Wire Line
-	7500 7500 8100 7500
-Wire Wire Line
-	8100 7500 8100 7700
-Connection ~ 7500 7500
-Wire Wire Line
-	8100 7500 8700 7500
-Wire Wire Line
-	8700 7500 8700 7700
-Connection ~ 8100 7500
 $Comp
 L Mechanical:Heatsink_Pad HS1
 U 1 1 5BB665AA
@@ -1966,7 +1788,10 @@ Wire Wire Line
 Wire Wire Line
 	14600 4400 14200 4400
 Connection ~ 14200 4400
-Connection ~ 2650 4800
 Wire Wire Line
-	2650 4800 2800 4800
+	2600 4800 2800 4800
+Wire Wire Line
+	4500 7500 4500 7700
+Wire Wire Line
+	4500 8200 4500 8400
 $EndSCHEMATC
