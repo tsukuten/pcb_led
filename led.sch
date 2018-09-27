@@ -497,13 +497,13 @@ F7 "PWM5" I R 5600 1200 50
 $EndSheet
 Text Notes 4100 1500 0    50   ~ 0
 xxx: Thermistor
-Text Label 5800 1000 0    50   ~ 0
+Text Label 5800 1100 0    50   ~ 0
 PWM3
 Wire Wire Line
 	5600 1000 5800 1000
-Text Label 5800 900  0    50   ~ 0
+Text Label 5800 1200 0    50   ~ 0
 PWM2
-Text Label 5800 800  0    50   ~ 0
+Text Label 5800 1300 0    50   ~ 0
 PWM1
 Wire Wire Line
 	5800 800  5600 800 
@@ -515,11 +515,11 @@ Wire Wire Line
 	5600 1200 5800 1200
 Wire Wire Line
 	5800 1300 5600 1300
-Text Label 5800 1100 0    50   ~ 0
+Text Label 5800 900  0    50   ~ 0
 PWM4
-Text Label 5800 1200 0    50   ~ 0
+Text Label 5800 800  0    50   ~ 0
 PWM5
-Text Label 5800 1300 0    50   ~ 0
+Text Label 5800 1000 0    50   ~ 0
 PWM6
 Wire Wire Line
 	2500 5800 2500 6000
