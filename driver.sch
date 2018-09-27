@@ -102,7 +102,7 @@ F 3 "" H 4100 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4800 2800 4800
+	2600 4800 2650 4800
 $Comp
 L Device:R_POT RV55
 U 1 1 5BBD9E8A
@@ -1510,12 +1510,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:NJM4580 U53
 U 1 1 5BEC1B10
-P 7400 1900
-F 0 "U53" H 7400 2267 50  0000 C CNN
-F 1 "NJM4580" H 7400 2176 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7400 1900 50  0001 C CNN
-F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 7400 1900 50  0001 C CNN
-	1    7400 1900
+P 2300 4800
+F 0 "U53" H 2300 5167 50  0000 C CNN
+F 1 "NJM4580" H 2300 5076 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2300 4800 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 2300 4800 50  0001 C CNN
+	1    2300 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1532,12 +1532,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:NJM4580 U52
 U 2 1 5BEC2F41
-P 2300 4800
-F 0 "U52" H 2300 5167 50  0000 C CNN
-F 1 "NJM4580" H 2300 5076 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 2300 4800 50  0001 C CNN
-F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 2300 4800 50  0001 C CNN
-	2    2300 4800
+P 7400 4800
+F 0 "U52" H 7400 5167 50  0000 C CNN
+F 1 "NJM4580" H 7400 5076 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7400 4800 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 7400 4800 50  0001 C CNN
+	2    7400 4800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1626,12 +1626,12 @@ Connection ~ 3100 8400
 $Comp
 L Amplifier_Operational:NJM4580 U53
 U 2 1 5BF9E58B
-P 7400 4800
-F 0 "U53" H 7400 5167 50  0000 C CNN
-F 1 "NJM4580" H 7400 5076 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7400 4800 50  0001 C CNN
-F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 7400 4800 50  0001 C CNN
-	2    7400 4800
+P 7400 1900
+F 0 "U53" H 7400 2267 50  0000 C CNN
+F 1 "NJM4580" H 7400 2176 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7400 1900 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 7400 1900 50  0001 C CNN
+	2    7400 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1966,4 +1966,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 4400 14200 4400
 Connection ~ 14200 4400
+Connection ~ 2650 4800
+Wire Wire Line
+	2650 4800 2800 4800
 $EndSCHEMATC
