@@ -194,7 +194,7 @@ U 1 1 5BB2722E
 P 1600 4700
 F 0 "RV53" H 1530 4746 50  0000 R CNN
 F 1 "10k" H 1530 4655 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 1600 4700 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 1600 4700 50  0001 C CNN
 F 3 "~" H 1600 4700 50  0001 C CNN
 	1    1600 4700
 	1    0    0    -1  
@@ -344,7 +344,7 @@ U 1 1 5BB7DF08
 P 1600 1800
 F 0 "RV52" H 1530 1846 50  0000 R CNN
 F 1 "10k" H 1530 1755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 1600 1800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 1600 1800 50  0001 C CNN
 F 3 "~" H 1600 1800 50  0001 C CNN
 	1    1600 1800
 	1    0    0    -1  
@@ -618,7 +618,7 @@ U 1 1 5BDD8839
 P 6700 4700
 F 0 "RV57" H 6630 4746 50  0000 R CNN
 F 1 "10k" H 6630 4655 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6700 4700 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 6700 4700 50  0001 C CNN
 F 3 "~" H 6700 4700 50  0001 C CNN
 	1    6700 4700
 	1    0    0    -1  
@@ -768,7 +768,7 @@ U 1 1 5BDD889A
 P 6700 1800
 F 0 "RV56" H 6630 1846 50  0000 R CNN
 F 1 "10k" H 6630 1755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6700 1800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 6700 1800 50  0001 C CNN
 F 3 "~" H 6700 1800 50  0001 C CNN
 	1    6700 1800
 	1    0    0    -1  
@@ -1060,7 +1060,7 @@ U 1 1 5BDF2081
 P 11700 4700
 F 0 "RV61" H 11630 4746 50  0000 R CNN
 F 1 "10k" H 11630 4655 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 11700 4700 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 11700 4700 50  0001 C CNN
 F 3 "~" H 11700 4700 50  0001 C CNN
 	1    11700 4700
 	1    0    0    -1  
@@ -1210,7 +1210,7 @@ U 1 1 5BDF20E2
 P 11700 1800
 F 0 "RV60" H 11630 1846 50  0000 R CNN
 F 1 "10k" H 11630 1755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 11700 1800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 11700 1800 50  0001 C CNN
 F 3 "~" H 11700 1800 50  0001 C CNN
 	1    11700 1800
 	1    0    0    -1  
