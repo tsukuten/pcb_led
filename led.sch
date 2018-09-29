@@ -99,7 +99,7 @@ U 1 1 5BA13C27
 P 3400 2500
 F 0 "R1" H 3341 2454 50  0000 R CNN
 F 1 "10k" H 3341 2545 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 3400 2500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 3400 2500 50  0001 C CNN
 F 3 "~" H 3400 2500 50  0001 C CNN
 	1    3400 2500
 	-1   0    0    1   
@@ -497,11 +497,11 @@ F7 "PWM5" I R 5600 1200 50
 $EndSheet
 Text Notes 4100 1500 0    50   ~ 0
 xxx: Thermistor
-Text Label 5800 1100 0    50   ~ 0
+Text Label 5800 1200 0    50   ~ 0
 PWM3
 Wire Wire Line
 	5600 1000 5800 1000
-Text Label 5800 1200 0    50   ~ 0
+Text Label 5800 1100 0    50   ~ 0
 PWM2
 Text Label 5800 1300 0    50   ~ 0
 PWM1
