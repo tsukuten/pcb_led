@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 11)
+    (drawings 17)
     (tracks 628)
     (zones 0)
     (modules 112)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.5)
     (user_trace_width 0.5)
     (user_trace_width 1.1)
     (user_trace_width 1.6)
@@ -4528,6 +4528,24 @@
     )
   )
 
+  (gr_text "LED driver v0.0.0\n      for the new planetarium projector\n(c) 2018 Tsukuba Univ. Astronomy Club\nDesigned by Y. Sugizaki (45th)" (at 107.315 55.245) (layer F.Mask)
+    (effects (font (size 1 0.6) (thickness 0.1)) (justify left))
+  )
+  (gr_text GND (at 83.185 97.155) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.2)))
+  )
+  (gr_text 48V (at 81.28 86.36) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.2)))
+  )
+  (gr_text "SCL SDA" (at 112.395 86.995) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.2)))
+  )
+  (gr_text Analog (at 109.22 123.19 90) (layer F.SilkS)
+    (effects (font (size 1.4 1.4) (thickness 0.2)))
+  )
+  (gr_text "24 48 12  5 GND" (at 100.33 93.345 20) (layer F.SilkS)
+    (effects (font (size 1.27 1) (thickness 0.2)))
+  )
   (gr_text "M3 mounting holes at (+3, +3)" (at 50.8 40.64) (layer F.Fab)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -4546,7 +4564,6 @@
   (gr_line (start 150.8 53.3) (end 150.8 148.3) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 53.3 50.8) (end 148.3 50.8) (layer Edge.Cuts) (width 0.1))
 
-  (via (at 56.515 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 4) (tstamp 5BBC1CAF))
   (segment (start 87.9 93.67) (end 92.71 88.86) (width 2) (layer F.Cu) (net 1) (status 20))
   (segment (start 86.36 93.67) (end 87.9 93.67) (width 2) (layer F.Cu) (net 1) (status 10))
   (segment (start 92.71 74.85) (end 92.63 74.93) (width 2) (layer F.Cu) (net 1) (status 30))
@@ -4705,6 +4722,7 @@
   (segment (start 106.68 135.89) (end 106.68 134.62) (width 1.6) (layer F.Cu) (net 3) (status 10))
   (segment (start 106.68 134.62) (end 105.41 133.35) (width 1.6) (layer F.Cu) (net 3))
   (segment (start 105.41 133.35) (end 104.14 133.35) (width 1.6) (layer F.Cu) (net 3) (status 20))
+  (via (at 56.515 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 4) (tstamp 5BBC1CAF))
   (segment (start 92.71 77.47) (end 92.71 83.82) (width 2) (layer F.Cu) (net 4) (status 30))
   (segment (start 92.71 86.36) (end 92.71 83.82) (width 2) (layer F.Cu) (net 4) (status 30))
   (segment (start 90.17 86.36) (end 86.36 90.17) (width 2) (layer F.Cu) (net 4) (status 20))
