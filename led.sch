@@ -18,8 +18,8 @@ $Comp
 L Device:Resonator_Small Y1
 U 1 1 5BA0B9BB
 P 2800 2150
-F 0 "Y1" V 3125 2100 50  0000 C CNN
-F 1 "8MHz" V 3034 2100 50  0000 C CNN
+F 0 "Y1" V 3000 2000 50  0000 C CNN
+F 1 "8MHz" V 2600 2150 50  0000 C CNN
 F 2 "Crystal:Resonator-3Pin_W8.0mm_H3.5mm" H 2775 2150 50  0001 C CNN
 F 3 "~" H 2775 2150 50  0001 C CNN
 	1    2800 2150
@@ -179,10 +179,6 @@ NoConn ~ 2400 1900
 NoConn ~ 2400 2000
 Text Label 2600 1800 0    50   ~ 0
 PWM3
-NoConn ~ 2400 2400
-NoConn ~ 2400 2500
-NoConn ~ 2400 2600
-NoConn ~ 2400 2700
 Wire Wire Line
 	2400 1800 2600 1800
 $Comp
@@ -231,17 +227,6 @@ Connection ~ 1000 2100
 Connection ~ 1800 4400
 Wire Wire Line
 	1800 4400 1800 4600
-$Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
-U 1 1 5BA0B90A
-P 1800 2700
-F 0 "U1" H 2000 1250 50  0000 R CNN
-F 1 "ATmega328P-PU" H 2550 1150 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 1800 2700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1800 2700 50  0001 C CNN
-	1    1800 2700
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2400 3200
 NoConn ~ 2400 3300
 NoConn ~ 2400 3400
@@ -791,4 +776,144 @@ Wire Wire Line
 Connection ~ 10700 4900
 Text Notes 8800 6100 0    50   ~ 0
 xxx: Use variable linear regulator for fans?
+Text Label 2600 2400 0    50   ~ 0
+ADC0
+Text Label 2600 2500 0    50   ~ 0
+ADC1
+Text Label 2600 2600 0    50   ~ 0
+ADC2
+Text Label 2600 2700 0    50   ~ 0
+ADC3
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U1
+U 1 1 5BA0B90A
+P 1800 2700
+F 0 "U1" H 2000 1250 50  0000 R CNN
+F 1 "ATmega328P-PU" H 2550 1150 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 1800 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1800 2700 50  0001 C CNN
+	1    1800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2400 2600 2400
+Wire Wire Line
+	2600 2500 2400 2500
+Wire Wire Line
+	2400 2600 2600 2600
+Wire Wire Line
+	2600 2700 2400 2700
+Text Label 5300 2300 0    50   ~ 0
+ADC0
+Text Label 5300 2400 0    50   ~ 0
+ADC1
+Text Label 5300 2500 0    50   ~ 0
+ADC2
+Text Label 5300 2600 0    50   ~ 0
+ADC3
+Wire Wire Line
+	5100 2300 5300 2300
+Wire Wire Line
+	5300 2400 5100 2400
+Wire Wire Line
+	5100 2500 5300 2500
+Wire Wire Line
+	5300 2600 5100 2600
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5BDA3A0D
+P 4900 2400
+F 0 "J3" H 4820 2717 50  0000 C CNN
+F 1 "Analog_input" H 4820 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4900 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5BDA8975
+P 6200 2900
+F 0 "#PWR0112" H 6200 2650 50  0001 C CNN
+F 1 "GND" H 6205 2727 50  0000 C CNN
+F 2 "" H 6200 2900 50  0001 C CNN
+F 3 "" H 6200 2900 50  0001 C CNN
+	1    6200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5BDC1195
+P 6800 2100
+F 0 "#PWR0113" H 6800 1950 50  0001 C CNN
+F 1 "+5V" H 6815 2273 50  0000 C CNN
+F 2 "" H 6800 2100 50  0001 C CNN
+F 3 "" H 6800 2100 50  0001 C CNN
+	1    6800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 5BDC53EA
+P 5800 2500
+F 0 "J4" H 5720 2917 50  0000 C CNN
+F 1 "Test_power" H 5720 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5800 2500 50  0001 C CNN
+F 3 "~" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0114
+U 1 1 5BDC943D
+P 6200 2100
+F 0 "#PWR0114" H 6200 1950 50  0001 C CNN
+F 1 "+24V" H 6215 2273 50  0000 C CNN
+F 2 "" H 6200 2100 50  0001 C CNN
+F 3 "" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+48V #PWR0115
+U 1 1 5BDC9584
+P 6400 2100
+F 0 "#PWR0115" H 6400 1950 50  0001 C CNN
+F 1 "+48V" H 6415 2273 50  0000 C CNN
+F 2 "" H 6400 2100 50  0001 C CNN
+F 3 "" H 6400 2100 50  0001 C CNN
+	1    6400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0116
+U 1 1 5BDC965F
+P 6600 2100
+F 0 "#PWR0116" H 6600 1950 50  0001 C CNN
+F 1 "+12V" H 6615 2273 50  0000 C CNN
+F 2 "" H 6600 2100 50  0001 C CNN
+F 3 "" H 6600 2100 50  0001 C CNN
+	1    6600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2100 6200 2300
+Wire Wire Line
+	6200 2300 6000 2300
+Wire Wire Line
+	6000 2400 6400 2400
+Wire Wire Line
+	6400 2400 6400 2100
+Wire Wire Line
+	6600 2100 6600 2500
+Wire Wire Line
+	6600 2500 6000 2500
+Wire Wire Line
+	6000 2600 6800 2600
+Wire Wire Line
+	6800 2600 6800 2100
+Wire Wire Line
+	6200 2900 6200 2700
+Wire Wire Line
+	6200 2700 6000 2700
 $EndSCHEMATC
